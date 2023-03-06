@@ -1,0 +1,125 @@
+footer {
+  background: #031e3e;
+  padding-top: 56px;
+}
+.footer {
+  display: flex;
+  padding: 0 40px 40px 40px;
+  gap: 50px;
+
+  @media (max-width: $breakpoint992) {
+    flex-wrap: wrap-reverse;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+  // .footer__item
+  &__item {
+    margin-left: 156px;
+    display: flex;
+    gap: 80px;
+    @media (max-width: $breakpoint992) {
+      flex: 0 1 100%;
+      margin-top: 35px;
+    }
+    @media (max-width: $breakpoint1200) {
+      margin-left: 0;
+    }
+  }
+  // .footer__list
+  &__list {
+  }
+  // .footer__title
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ffffff;
+  }
+  // .footer__list-item
+  &__list-item {
+    margin-top: 24px;
+  }
+  // .footer__link
+  &__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    opacity: 0.8;
+    &:hover {
+      transition: 0.3 ease;
+      opacity: 1;
+    }
+  }
+  // .footer__text
+  &__text {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    opacity: 0.8;
+  }
+  // .footer__form
+  &__form {
+  }
+
+  // .footer__form-label
+  &__form-label {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+    @media (max-width: $breakpoint480) {
+      flex-wrap: wrap;
+    }
+  }
+
+  // .footer__form-input
+  &__form-input {
+    flex: 0 1 270px;
+    background: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    padding: 12px 12px 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    outline: none;
+    @media (max-width: $breakpoint480) {
+      flex: 0 1 100%;
+    }
+    &:focus {
+      outline: 2px solid #398bff;
+    }
+    &::placeholder {
+      color: #cccccc;
+    }
+  }
+  // .footer__form-btn
+  &__form-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 8px;
+    @media (max-width: $breakpoint480) {
+      flex: 0 1 100%;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+    &:hover {
+      background: #398bee;
+      transition: 0.3 ease;
+    }
+  }
+}
+
+.btn {
+  // .btn__primary
+  &__primary {
+  }
+}
+

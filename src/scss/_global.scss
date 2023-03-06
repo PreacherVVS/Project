@@ -1,0 +1,96 @@
+// Container
+.container {
+  max-width: ($containerWidth + $containerPadding) + px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $containerSidePadding + px;
+
+  @media (max-width: $breakpoint1450) {
+    max-width: 1200px;
+  }
+
+  @media (max-width: $breakpoint1200) {
+    max-width: 1160px;
+  }
+
+  @media (max-width: $breakpoint992) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    max-width: 740px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    max-width: none;
+  }
+}
+
+// Buttons
+.btn {
+  padding: 15px 22px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+
+  // .btn__primary
+  &__primary {
+    color: #ffffff;
+    background: #398bff;
+    border-radius: 4px;
+    // .btn__secondary
+  }
+
+  &__secondary {
+    background: rgba(44, 130, 253, 0.15);
+    border-radius: 4px;
+    color: $colorSecondary;
+  }
+}
+// section__title
+.section__title {
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+  color: #001731;
+}
+
+// .section__text
+.section__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 23, 49, 0.55);
+  margin-top: 5px;
+
+  @media (max-width: $breakpoint768) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+// Body & Locked
+body {
+  font-family: $fontMain;
+  &.locked {
+    overflow: hidden;
+  }
+}
+
+// Animations
+// Fade
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
